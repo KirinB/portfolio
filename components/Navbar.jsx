@@ -11,6 +11,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import myLogo from "/../public/assets/logo.png";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -57,12 +58,7 @@ function Navbar() {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href={"/"}>
-          <Image
-            src="/../public/assets/logo.png"
-            alt=""
-            width={80}
-            height={50}
-          />
+          <Image src={myLogo} alt="" width={80} height={50} />
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
@@ -105,12 +101,7 @@ function Navbar() {
         >
           <div>
             <div className="flex  w-full items-center justify-between">
-              <Image
-                src={"/../public/assets/logo.png"}
-                alt=""
-                width={87}
-                height={35}
-              />
+              <Image src={myLogo} alt="" width={87} height={35} />
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
