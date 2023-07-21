@@ -11,7 +11,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import myLogo from "/../public/assets/logo.png";
+import myLogo from "../public/assets/logo.png";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
