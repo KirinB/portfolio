@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
+import Image from "next/image";
 
 function Contact() {
   return (
@@ -16,9 +17,16 @@ function Contact() {
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
-                <img
+                {/* <img
                   className="rounded-xl hover:scale-105 ease-in duration-300 w-full"
                   src="/assets/contact.jpg"
+                /> */}
+                <Image
+                  src={"/assets/contact.jpg"}
+                  className="rounded-xl hover:scale-105 ease-in duration-300 w-full"
+                  width={500}
+                  height={500}
+                  alt=""
                 />
               </div>
               <div>
@@ -26,7 +34,7 @@ function Contact() {
                 <p>Front-End Developer</p>
                 <p className="py-4">
                   I am available for freelance or full-time positions. Contact
-                  me and let's talk.
+                  me and let&apos;s talk.
                 </p>
               </div>
               <div>

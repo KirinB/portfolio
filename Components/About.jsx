@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function About() {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
@@ -9,22 +11,29 @@ function About() {
           <h2 className="py-4">Who I Am</h2>
           <p className="p-2 text-gray-600">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            industry. Lorem Ipsum has been the industry&apos;s standard dummy
+            text ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has survived
+            not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in
+            the 1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
         <div className="p-4">
           <div className="w-full h-auto m-auto shadow-xl  shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-            <img
+            {/* <img
               className="w-[90%] rounded-xl"
               src={"assets/about.jpg"}
               alt=""
+            /> */}
+            <Image
+              src={"/assets/about.jpg"}
+              className="rounded-xl w-[90%]"
+              alt=""
+              width={600}
+              height={600}
             />
           </div>
         </div>
