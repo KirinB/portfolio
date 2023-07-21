@@ -153,7 +153,7 @@ function Navbar() {
                   Projects
                 </li>
               </Link>
-              <Link href={"/#contact"}>
+              <Link href={"#contact"} scroll={true}>
                 <li
                   onClick={() => setNav(false)}
                   className="py-4 text-sm hover:text-[#5651e5]"
